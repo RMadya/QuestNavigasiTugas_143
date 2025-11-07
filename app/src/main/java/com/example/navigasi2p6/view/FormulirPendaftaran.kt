@@ -93,4 +93,20 @@ fun FormDataDiriStyled(
                     }
 
                     // Form Input
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        horizontalAlignment = Alignment.Start,
+                        verticalArrangement = Arrangement.spacedBy(10.dp)
+                    ) {
+                        Text(text = "NAMA LENGKAP", color = labelColorOnWhite)
+                        OutlinedTextField(
+                            value = namaInput,
+                            onValueChange = { namaInput = it },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth(),
+                            placeholder = { Text("Isi nama lengkapnya") }
+                        )
+
 
