@@ -56,5 +56,18 @@ fun WelcomeScreen(
         Spacer(modifier = Modifier.height(16.dp))
 
         // Nama dan NIM
+        Text(
+            text = "Naldi",
+            fontSize = 20.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.SemiBold
+        )
+
+        Text(
+            text = "20230140143",
+            fontSize = 16.sp,
+            color = Color.Gray
+        )
+
 
 
