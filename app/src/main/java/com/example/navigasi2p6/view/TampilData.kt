@@ -59,4 +59,7 @@ fun TampilData(
                 .padding(vertical = 12.dp)
         )
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // Daftar Data Peserta
 
