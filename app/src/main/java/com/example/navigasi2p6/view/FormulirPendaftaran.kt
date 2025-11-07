@@ -130,4 +130,25 @@ fun FormDataDiriStyled(
                             }
                         }
 
+                        Text(text = "STATUS PERKAWINAN", color = labelColorOnWhite)
+                        Column(verticalArrangement = Arrangement.spacedBy(1.dp)) {
+                            statuses.forEach { status ->
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier
+                                        .selectable(
+                                            selected = (statusInput == status),
+                                            onClick = { statusInput = status }
+                                        )
+                                        .padding(vertical = 1.dp)
+                                ) {
+                                    RadioButton(
+                                        selected = (statusInput == status),
+                                        onClick = { statusInput = status }
+                                    )
+                                    Text(text = status, modifier = Modifier.padding(start = 8.dp))
+                                }
+                            }
+                        }
+
 
