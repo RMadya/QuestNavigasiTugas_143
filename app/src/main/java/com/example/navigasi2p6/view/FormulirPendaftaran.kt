@@ -201,4 +201,13 @@ fun FormDataDiriStyled(
                             Text(text = "Kembali", fontSize = 16.sp)
                         }
 
-
+                        // Hasil
+                        if (isSubmitted) {
+                            ElevatedCard(
+                                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                                colors = CardDefaults.cardColors(containerColor = cardResultBg),
+                                shape = RoundedCornerShape(12.dp),
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 8.dp)
+                            )
