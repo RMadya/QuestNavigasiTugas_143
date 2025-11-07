@@ -53,5 +53,8 @@ fun WelcomeScreen(
             contentScale = ContentScale.Fit
         )
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // Nama dan NIM
 
 
