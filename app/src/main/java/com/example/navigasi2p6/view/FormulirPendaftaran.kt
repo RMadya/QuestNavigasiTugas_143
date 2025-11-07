@@ -82,4 +82,15 @@ fun FormDataDiriStyled(
                             .clip(RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp))
                             .background(headerGradient),
                         contentAlignment = Alignment.Center
-                    )
+                    ) {
+                        Text(
+                            text = "Formulir Pendaftaran",
+                            color = Color.White,
+                            fontWeight = FontWeight.SemiBold,
+                            textAlign = TextAlign.Center,
+                            style = MaterialTheme.typography.titleLarge
+                        )
+                    }
+
+                    // Form Input
+
