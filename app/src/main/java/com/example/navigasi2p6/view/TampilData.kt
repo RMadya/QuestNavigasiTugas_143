@@ -23,4 +23,12 @@ import androidx.compose.ui.unit.sp
 fun TampilData(
     onHomeClick: () -> Unit,
     onFormClick: () -> Unit
-)
+) {
+    val dataPeserta = listOf(
+        "Nama Lengkap" to "Jihadut tolibin",
+        "Jenis Kelamin" to "Laki-Laki",
+        "Status Perkawinan" to "Lajang",
+        "Alamat" to "Lombok"
+    )
+
+
