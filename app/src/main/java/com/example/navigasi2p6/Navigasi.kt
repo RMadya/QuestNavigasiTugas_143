@@ -59,5 +59,16 @@ fun DataApp(
                 )
             }
 
-
+            composable(route = Navigation.Formulir.name) {
+                FormDataDiriStyled(
+                    onBackClick = {
+                        navController.navigate(Navigation.Detail.name) {
+                            popUpTo(Navigation.Welcome.name)
+                        }
+                    }
+                )
+            }
+        }
+    }
+}
 
