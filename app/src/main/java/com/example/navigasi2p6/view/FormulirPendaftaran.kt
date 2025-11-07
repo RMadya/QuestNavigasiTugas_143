@@ -61,4 +61,11 @@ fun FormDataDiriStyled(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(vertical = 12.dp)
-        )
+        ) {
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp),
+                shape = RoundedCornerShape(18.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            )
