@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Praktikum6</string>
+    <string name="submit">Submit</string>
+    <string name="beranda">Beranda</string>
+    <string name="formulir_pendaftaran">Formulir Pendaftaran</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="jenis_perkawinan">STATUS PERKAWINAN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="tampil">List Daftar Peserta</string>
+    <string name="home">SELAMAT DATANG</string>
+
+
+</resources>
