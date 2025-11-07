@@ -69,5 +69,8 @@ fun WelcomeScreen(
             color = Color.Gray
         )
 
+        Spacer(modifier = Modifier.height(40.dp))
+
+        // Tombol Submit
 
 
