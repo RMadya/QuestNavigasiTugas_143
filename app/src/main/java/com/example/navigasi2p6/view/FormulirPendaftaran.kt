@@ -109,4 +109,25 @@ fun FormDataDiriStyled(
                             placeholder = { Text("Isi nama lengkapnya") }
                         )
 
+                        Text(text = "JENIS KELAMIN", color = labelColorOnWhite)
+                        Column(verticalArrangement = Arrangement.spacedBy(1.dp)) {
+                            genders.forEach { gender ->
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier
+                                        .selectable(
+                                            selected = (genderInput == gender),
+                                            onClick = { genderInput = gender }
+                                        )
+                                        .padding(vertical = 1.dp)
+                                ) {
+                                    RadioButton(
+                                        selected = (genderInput == gender),
+                                        onClick = { genderInput = gender }
+                                    )
+                                    Text(text = gender, modifier = Modifier.padding(start = 8.dp))
+                                }
+                            }
+                        }
+
 
