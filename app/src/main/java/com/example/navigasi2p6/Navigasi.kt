@@ -34,5 +34,15 @@ fun DataApp(
             modifier = Modifier.padding(innerPadding)
         ) {
             //  Halaman 1: Welcome Screen
+            composable(route = Navigation.Welcome.name) {
+                WelcomeScreen(
+                    onSubmitClick = {
+                        // Dari Welcome → ke TampilData
+                        navController.navigate(Navigation.Detail.name)
+                    }
+                )
+            }
+
+            //  Halaman 2: Tampil Data
 
 
