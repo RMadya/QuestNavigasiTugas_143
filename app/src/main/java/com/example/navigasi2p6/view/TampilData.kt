@@ -44,4 +44,19 @@ fun TampilData(
             )
             .padding(20.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        // Judul
+        Text(
+            text = "List Daftar Peserta",
+            fontSize = 26.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 16.dp)
+                .background(Color(0xFFBA68C8), RoundedCornerShape(12.dp))
+                .padding(vertical = 12.dp)
+        )
+
+
