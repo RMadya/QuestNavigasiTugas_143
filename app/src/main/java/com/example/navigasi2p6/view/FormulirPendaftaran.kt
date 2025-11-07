@@ -186,4 +186,19 @@ fun FormDataDiriStyled(
                         }
                         Spacer(modifier = Modifier.height(8.dp))
 
+                        // Tombol Back 🔙
+                        Button(
+                            onClick = onBackClick,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(48.dp),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color(0xFFA81BBD),
+                                contentColor = Color.White
+                            ),
+                            shape = RoundedCornerShape(24.dp)
+                        ) {
+                            Text(text = "Kembali", fontSize = 16.sp)
+                        }
+
 
