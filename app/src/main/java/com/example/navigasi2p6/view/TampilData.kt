@@ -91,4 +91,17 @@ fun TampilData(
         Spacer(modifier = Modifier.height(20.dp))
 
         // Tombol Beranda
+        Button(
+            onClick = onHomeClick,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFA81BBD),
+                contentColor = Color.White
+            ),
+            shape = RoundedCornerShape(10.dp)
+        ) {
+            Text(text = "Beranda", fontSize = 18.sp)
+        }
 
