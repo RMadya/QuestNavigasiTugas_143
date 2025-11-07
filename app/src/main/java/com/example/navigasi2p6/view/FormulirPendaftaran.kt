@@ -170,4 +170,15 @@ fun FormDataDiriStyled(
                                 submittedAlamat = alamatInput.trim()
                                 isSubmitted = true
                             },
-
+                            enabled = namaInput.isNotBlank() && alamatInput.isNotBlank(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(48.dp)
+                                .clip(RoundedCornerShape(24.dp)),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Black,      // 🔥 Tombol hitam
+                                contentColor = Color.White,        // 🔥 Teks tetap putih
+                                disabledContainerColor = Color.DarkGray,  // Opsional: warna saat tombol nonaktif
+                                disabledContentColor = Color.LightGray    // Opsional: teks saat tombol nonaktif
+                            )
+                        )
