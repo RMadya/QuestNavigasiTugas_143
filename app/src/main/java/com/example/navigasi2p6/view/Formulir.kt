@@ -72,5 +72,19 @@ fun WelcomeScreen(
         Spacer(modifier = Modifier.height(40.dp))
 
         // Tombol Submit
-
+        Button(
+            onClick = onSubmitClick,
+            modifier = Modifier
+                .fillMaxWidth(0.6f)
+                .height(48.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF9C27B0), // ungu
+                contentColor = Color.White
+            ),
+            shape = MaterialTheme.shapes.large
+        ) {
+            Text(text = "Submit", fontSize = 18.sp)
+        }
+    }
+}
 
