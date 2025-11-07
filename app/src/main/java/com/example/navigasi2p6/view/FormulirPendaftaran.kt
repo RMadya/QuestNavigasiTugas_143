@@ -210,4 +210,25 @@ fun FormDataDiriStyled(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(vertical = 8.dp)
-                            )
+                            ) {
+                                Column(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(horizontal = 16.dp, vertical = 12.dp),
+                                    verticalArrangement = Arrangement.spacedBy(6.dp)
+                                ) {
+                                    Text(text = "Nama   : ${submittedNama.ifBlank { "-" }}", color = cardResultText)
+                                    Text(text = "Gender : ${submittedGender.ifBlank { "-" }}", color = cardResultText)
+                                    Text(text = "Status : ${submittedStatus.ifBlank { "-" }}", color = cardResultText)
+                                    Text(text = "Alamat : ${submittedAlamat.ifBlank { "-" }}", color = cardResultText)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Auto-scroll saat hasil muncul
+
