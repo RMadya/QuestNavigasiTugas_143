@@ -41,5 +41,6 @@ fun WelcomeScreen(
             textAlign = TextAlign.Center
         )
 
+        Spacer(modifier = Modifier.height(24.dp))
 
 
