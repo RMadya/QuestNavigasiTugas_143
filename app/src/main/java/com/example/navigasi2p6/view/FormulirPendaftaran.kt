@@ -162,4 +162,12 @@ fun FormDataDiriStyled(
 
                         Spacer(modifier = Modifier.height(6.dp))
 
+                        Button(
+                            onClick = {
+                                submittedNama = namaInput.trim()
+                                submittedGender = genderInput
+                                submittedStatus = statusInput
+                                submittedAlamat = alamatInput.trim()
+                                isSubmitted = true
+                            },
 
