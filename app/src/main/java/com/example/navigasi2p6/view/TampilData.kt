@@ -62,4 +62,33 @@ fun TampilData(
         Spacer(modifier = Modifier.height(16.dp))
 
         // Daftar Data Peserta
+        dataPeserta.forEach { (label, value) ->
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color.White, RoundedCornerShape(16.dp))
+                    .padding(vertical = 10.dp, horizontal = 16.dp)
+                    .padding(bottom = 8.dp)
+                    .then(Modifier.padding(vertical = 5.dp))
+            ) {
+                Text(
+                    text = label.uppercase(),
+                    fontSize = 14.sp,
+                    color = Color.Gray,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Text(
+                    text = value,
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = FontFamily.Cursive,
+                    color = Color(0xFF4A148C)
+                )
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+        }
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        // Tombol Beranda
 
