@@ -231,4 +231,10 @@ fun FormDataDiriStyled(
     }
 
     // Auto-scroll saat hasil muncul
-
+    LaunchedEffect(isSubmitted) {
+        if (isSubmitted) {
+            delay(80)
+            scrollState.animateScrollTo(scrollState.maxValue)
+        }
+    }
+}
