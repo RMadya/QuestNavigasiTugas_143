@@ -51,4 +51,8 @@ fun FormDataDiriStyled(
 
     val scrollState = rememberScrollState()
 
-
+    Surface(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFFF8EAF6))
+    )
