@@ -68,4 +68,9 @@ fun FormDataDiriStyled(
                     .padding(horizontal = 16.dp),
                 shape = RoundedCornerShape(18.dp),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-            )
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .verticalScroll(scrollState)
+                )
