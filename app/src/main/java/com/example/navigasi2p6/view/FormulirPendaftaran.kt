@@ -73,4 +73,13 @@ fun FormDataDiriStyled(
                     modifier = Modifier
                         .fillMaxWidth()
                         .verticalScroll(scrollState)
-                )
+                ) {
+                    // Header
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(50.dp)
+                            .clip(RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp))
+                            .background(headerGradient),
+                        contentAlignment = Alignment.Center
+                    )
