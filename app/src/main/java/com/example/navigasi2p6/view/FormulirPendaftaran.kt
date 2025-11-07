@@ -55,4 +55,10 @@ fun FormDataDiriStyled(
         modifier = modifier
             .fillMaxSize()
             .background(Color(0xFFF8EAF6))
-    )
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(vertical = 12.dp)
+        )
