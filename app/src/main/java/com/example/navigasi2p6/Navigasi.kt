@@ -44,5 +44,20 @@ fun DataApp(
             }
 
             //  Halaman 2: Tampil Data
+            composable(route = Navigation.Detail.name) {
+                TampilData(
+                    onHomeClick = {
+                        // Tombol kembali ke Welcome
+                        navController.navigate(Navigation.Welcome.name) {
+                            popUpTo(Navigation.Welcome.name) { inclusive = true }
+                        }
+                    },
+                    onFormClick = {
+                        // Dari TampilData → ke Formulir Pendaftaran
+                        navController.navigate(Navigation.Formulir.name)
+                    }
+                )
+            }
+
 
 
