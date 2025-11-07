@@ -22,5 +22,9 @@ enum class Navigation {
 
 
 //  Fungsi utama untuk navigasi antar layar
-
+@Composable
+fun DataApp(
+    navController: NavHostController = rememberNavController(),
+    modifier: Modifier = Modifier
+)
 
