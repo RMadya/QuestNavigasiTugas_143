@@ -181,4 +181,9 @@ fun FormDataDiriStyled(
                                 disabledContainerColor = Color.DarkGray,  // Opsional: warna saat tombol nonaktif
                                 disabledContentColor = Color.LightGray    // Opsional: teks saat tombol nonaktif
                             )
-                        )
+                        ) {
+                            Text(text = "Submit", fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
+                        }
+                        Spacer(modifier = Modifier.height(8.dp))
+
+
