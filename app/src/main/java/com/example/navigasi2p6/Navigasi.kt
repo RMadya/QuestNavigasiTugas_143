@@ -26,5 +26,13 @@ enum class Navigation {
 fun DataApp(
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier
-)
+) {
+    Scaffold { innerPadding ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigation.Welcome.name,
+            modifier = Modifier.padding(innerPadding)
+        ) {
+            //  Halaman 1: Welcome Screen
+
 
