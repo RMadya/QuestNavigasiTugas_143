@@ -31,4 +31,17 @@ fun TampilData(
         "Alamat" to "Lombok"
     )
 
-
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFFCE93D8), // ungu muda
+                        Color.White
+                    )
+                )
+            )
+            .padding(20.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
